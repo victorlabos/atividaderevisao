@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+
+            
+
+            $(function(){
+
+                $("#mudared").on('click', function(){
+                    $("body").css('background-color' ,'red'); 
+                })
+                
+                $('#mudallow').on('click', function(){
+                    $('body').css('background-color', 'yellow'); 
+                })
+
+                $("#mudablue").on('click', function(){
+                    $("body").css('background-color' ,'blue'); 
+                })
+
+                $("#mudagreen").on('click', function(){
+                    $("body").css('background-color' ,'green'); 
+                })
+
+                $("#mudablack").on('click', function(){
+                    $("body").css('background-color' ,'black'); 
+                })
+
+
+            })
+
+        </script>
+    </head>
+    <body>
+        <button id="mudared"> Mudar para vermelho</button>
+        <button id="mudallow"> Mudar para amarelo</button>
+        <button id="mudablue"> Mudar para azul</button>
+        <button id="mudagreen"> Mudar para verde</button>
+        <button id="mudablack"> Mudar para preto</button>
+        
+    </body>
+</html>
