@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+
+        /* a função $(function()){}) é executado assim que o documento é carregado por complero*/
+
+        $(function(){
+            //Vai executar o codigo quando o evento caontecer
+            $("#meclique").on('click', function() {
+                let nome = $("#campo").val(); // Pega o valor do campo e e guarda o nome
+
+                alert(nome) //Mostra um alerta com a variavel nome
+            })
+
+        })
+
+    </script>
+
+</head>
+<body>
+    <label> Digite seu nome:</label>
+    <input type="text" id="campo">
+
+    <button id="meclique">Mostrar alerta</button>
+
+    
+</body>
+</html>
